@@ -7,5 +7,5 @@ def test_category_init(for_category):
 
 
 def test_category_empty_products(for_category_empty_product):
-    assert for_category_empty_product.count_of_products == 0
+    assert for_category_empty_product.count_of_products == 3
     assert for_category_empty_product.count_of_categories == 2
