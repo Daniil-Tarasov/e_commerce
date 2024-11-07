@@ -16,8 +16,8 @@ def create_objects_from_json(data):
     category = []
     for product in data:
         products = []
-        for product_list in product['products']:
+        for product_list in product["products"]:
             products.append(Product(**product_list))
-        product['products'] = products
+        product["products"] = products
         category.append(Category(**product))
     return category
