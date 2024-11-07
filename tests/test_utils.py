@@ -14,7 +14,7 @@ def test_create_objects_from_json():
         [
             {
                 "name": "Смартфоны",
-                "description": "Смартфоны, как средство не только коммуникации, но и получение дополнительных функций для удобства жизни",
+                "description": "Смартфоны, как средство не только коммуникации",
                 "products": [
                     {
                         "name": "Samsung Galaxy C23 Ultra",
