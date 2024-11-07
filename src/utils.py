@@ -21,11 +21,3 @@ def create_objects_from_json(data):
         product['products'] = products
         category.append(Category(**product))
     return category
-
-
-if __name__ == "__main__":
-    row_data = read_json("../data/products.json")
-    user_data = create_objects_from_json(row_data)
-
-    print(user_data[0].name)
-    print(user_data[0].products)
