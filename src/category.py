@@ -23,12 +23,13 @@ class Category:
     def products(self):
         products_str = ""
         for product in self.__products:
-            products_str += f'{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n'
+            products_str += f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
         return products_str
 
     @property
     def products_list(self):
         return self.__products
+
 
 # if __name__ == "__main__":
 #     product1 = Product('Samsung', "256GB", 10000.0, 5)
@@ -40,5 +41,3 @@ class Category:
 #
 #     print(category.products)
 #     print(category.count_of_products)
-
-

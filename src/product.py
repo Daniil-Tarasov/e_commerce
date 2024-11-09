@@ -15,11 +15,11 @@ class Product:
     def new_product(cls, dict_product, products=None):
         if products:
             for product in products:
-                if product.name == dict_product['name']:
-                    product.quantity += dict_product['quantity']
-                    product.price = max([product.price, dict_product['price']])
+                if product.name == dict_product["name"]:
+                    product.quantity += dict_product["quantity"]
+                    product.price = max([product.price, dict_product["price"]])
                     return product
-        return cls(dict_product['name'], dict_product['description'], dict_product['price'], dict_product['quantity'])
+        return cls(dict_product["name"], dict_product["description"], dict_product["price"], dict_product["quantity"])
 
     @property
     def price(self):
@@ -28,11 +28,11 @@ class Product:
     @price.setter
     def price(self, price: float):
         if price <= 0:
-            print('Цена не должна быть нулевая или отрицательная')
+            print("Цена не должна быть нулевая или отрицательная")
             return
         if price < self.__price:
             check_input = input("Изменять цену? Введите y если да,и n если нет.\n")
-            if check_input != 'y':
+            if check_input != "y":
                 return
         self.__price = price
 
