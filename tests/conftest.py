@@ -10,6 +10,11 @@ def first_product():
 
 
 @pytest.fixture
+def second_product():
+    return Product("Молоко", "Молоко '3.2%", 60.50, 7)
+
+
+@pytest.fixture
 def for_category():
     return Category(
         name="Молочные продукты",
