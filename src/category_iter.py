@@ -1,5 +1,5 @@
-from src.category import Category
-from src.product import Product
+# from src.category import Category
+# from src.product import Product
 
 
 class CategoryIterator:
@@ -19,6 +19,7 @@ class CategoryIterator:
             return product
         else:
             raise StopIteration
+
 
 # if __name__ == '__main__':
 #     product1 = Product('Samsung', "256GB", 10000.0, 5)

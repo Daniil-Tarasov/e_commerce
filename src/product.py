@@ -48,9 +48,9 @@ class Product:
 #     product2 = Product('IPhone', "256GB", 100000.0, 5)
 #
 #     print(product1)
-    # print(product1.description)
-    # print(product1.price)
-    # print(product1.quantity)
+# print(product1.description)
+# print(product1.price)
+# print(product1.quantity)
 #
 #     product2 = Product.new_product('IPhone', "256GB", 10000.0, 5)
 #

@@ -28,6 +28,7 @@ def for_category():
 def for_category_empty_product():
     return Category(name="Молочные продукты", description="Сыр с плесенью")
 
+
 @pytest.fixture
 def category_iterator(for_category):
     return CategoryIterator(for_category)

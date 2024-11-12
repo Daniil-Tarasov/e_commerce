@@ -30,7 +30,7 @@ def test_price_init(capsys, first_product):
 
 
 def test_str_product(first_product):
-    assert str(first_product) == 'Сыр, 100.5 руб. Остаток: 3 шт.'
+    assert str(first_product) == "Сыр, 100.5 руб. Остаток: 3 шт."
 
 
 def test_add_product(first_product, second_product):

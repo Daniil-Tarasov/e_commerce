@@ -15,4 +15,4 @@ def test_products_property(for_category):
 
 
 def test_str_category(for_category):
-    assert str(for_category) == 'Молочные продукты, количество продуктов: 15 шт.'
+    assert str(for_category) == "Молочные продукты, количество продуктов: 15 шт."
