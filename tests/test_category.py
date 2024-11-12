@@ -12,3 +12,7 @@ def test_category_empty_products(for_category_empty_product):
 
 def test_products_property(for_category):
     assert for_category.products == "Сыр 1, 150.5 руб. Остаток: 5 шт.\nСыр 2, 100.99 руб. Остаток: 10 шт.\n"
+
+
+def test_str_category(for_category):
+    assert str(for_category) == "Молочные продукты, количество продуктов: 15 шт."

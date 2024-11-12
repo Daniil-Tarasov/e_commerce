@@ -19,11 +19,17 @@ class Category:
         self.__products.append(product)
         Category.count_of_products += 1
 
+    def __str__(self):
+        products_in_stock = 0
+        for product in self.__products:
+            products_in_stock += product.quantity
+        return f"{self.name}, количество продуктов: {products_in_stock} шт."
+
     @property
     def products(self):
         products_str = ""
         for product in self.__products:
-            products_str += f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
+            products_str += f"{str(product)}\n"
         return products_str
 
     @property
@@ -39,5 +45,5 @@ class Category:
 #
 #     category = Category('Смартфоны', "Смартфоны", [product1, product2, product3, product4])
 #
-#     print(category.products)
+#     print(category)
 #     print(category.count_of_products)
