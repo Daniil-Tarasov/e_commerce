@@ -37,13 +37,13 @@ class Category:
         return self.__products
 
 
-if __name__ == "__main__":
-    product1 = Product('Samsung', "256GB", 10000.0, 5)
-    product2 = Product('IPhone', "256GB", 10000.0, 5)
-    product3 = Product('Lenovo', "256GB", 10000.0, 5)
-    product4 = Product('Asus', "256GB", 10000.0, 5)
-
-    category = Category('Смартфоны', "Смартфоны", [product1, product2, product3, product4])
-
-    print(category)
-    print(category.count_of_products)
+# if __name__ == "__main__":
+#     product1 = Product('Samsung', "256GB", 10000.0, 5)
+#     product2 = Product('IPhone', "256GB", 10000.0, 5)
+#     product3 = Product('Lenovo', "256GB", 10000.0, 5)
+#     product4 = Product('Asus', "256GB", 10000.0, 5)
+#
+#     category = Category('Смартфоны', "Смартфоны", [product1, product2, product3, product4])
+#
+#     print(category)
+#     print(category.count_of_products)

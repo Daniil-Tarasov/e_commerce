@@ -43,11 +43,11 @@ class Product:
         return self.__price * self.quantity + other.price * other.quantity
 
 
-if __name__ == "__main__":
-    product1 = Product('Samsung', "256GB", 10000.0, 5)
-    product2 = Product('IPhone', "256GB", 100000.0, 5)
-
-    print(product1)
+# if __name__ == "__main__":
+#     product1 = Product('Samsung', "256GB", 10000.0, 5)
+#     product2 = Product('IPhone', "256GB", 100000.0, 5)
+#
+#     print(product1)
     # print(product1.description)
     # print(product1.price)
     # print(product1.quantity)

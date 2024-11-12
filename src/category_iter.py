@@ -6,6 +6,7 @@ class CategoryIterator:
 
     def __init__(self, obj_category):
         self.category = obj_category
+        self.index = 0
 
     def __iter__(self):
         self.index = 0
@@ -19,18 +20,15 @@ class CategoryIterator:
         else:
             raise StopIteration
 
-if __name__ == '__main__':
-    product1 = Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)
-    product2 = Product("Iphone 15", "512GB, Gray space", 210000.0, 8)
-    product3 = Product("Xiaomi Redmi Note 11", "1024GB, Синий", 31000.0, 14)
-
-    category1 = Category(
-        "Смартфоны",
-        "Смартфоны, как средство не только коммуникации",
-        [product1, product2, product3]
-    )
-
-    iterator = CategoryIterator(category1)
-
-    for product in iterator:
-        print(product)
+# if __name__ == '__main__':
+#     product1 = Product('Samsung', "256GB", 10000.0, 5)
+#     product2 = Product('IPhone', "256GB", 100000.0, 2)
+#     product3 = Product('Lenovo', "256GB", 10000.0, 5)
+#     product4 = Product('Asus', "256GB", 10000.0, 5)
+#
+#     category = Category('Смартфоны', "Смартфоны", [product1, product2, product3, product4])
+#
+#     iterator = CategoryIterator(category)
+#
+#     for product in iterator:
+#         print(product)
