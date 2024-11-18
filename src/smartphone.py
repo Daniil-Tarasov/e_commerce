@@ -16,4 +16,3 @@ class Smartphone(Product):
 #     product3 = Smartphone('IPhone', "256GB", 100000.0, 5, "Test", "15 Pro", '16', 'Red')
 #
 #     print(product3 + product1)
-

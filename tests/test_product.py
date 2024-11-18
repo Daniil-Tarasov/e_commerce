@@ -42,4 +42,3 @@ def test_add_product(first_product, second_product):
 def test_add_not_product(first_product):
     with pytest.raises(TypeError):
         result = first_product + 1
-
