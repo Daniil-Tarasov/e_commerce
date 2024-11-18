@@ -9,3 +9,10 @@ class Smartphone(Product):
         self.memory = memory
         self.color = color
 
+
+if __name__ == "__main__":
+    product1 = Smartphone('Samsung', "256GB", 10000.0, 5, 'Exynos', 'S24', '8', 'Gray')
+    product2 = Product('IPhone', "256GB", 100000.0, 5)
+    product3 = Smartphone('IPhone', "256GB", 100000.0, 5, "Test", "15 Pro", '16', 'Red')
+
+    product2 + product1
