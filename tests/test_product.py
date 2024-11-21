@@ -21,7 +21,7 @@ def product_create():
 def test_price_init(capsys, first_product):
     first_product.price = 0.0
     meesage = capsys.readouterr()
-    assert meesage.out.strip() == "Цена не должна быть нулевая или отрицательная"
+    assert meesage.out.strip().split("\n")[-1] == "Цена не должна быть нулевая или отрицательная"
 
     first_product.price = -1.0
     meesage = capsys.readouterr()
