@@ -40,6 +40,13 @@ class Category:
         return self.__products
 
 
+    def middle_price(self):
+        try:
+            return sum([product.price for product in self.__products]) / len(self.__products)
+        except ZeroDivisionError:
+            return 0
+
+
 # if __name__ == "__main__":
 #     product1 = Product('Samsung', "256GB", 10000.0, 5)
 #     product2 = Product('IPhone', "256GB", 10000.0, 5)
