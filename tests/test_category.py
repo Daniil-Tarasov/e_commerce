@@ -20,9 +20,11 @@ def test_products_property(for_category):
 def test_str_category(for_category):
     assert str(for_category) == "Молочные продукты, количество продуктов: 15 шт."
 
+
 def test_middle_price(for_category, category_empty_product):
     assert for_category.middle_price() == 125.745
     assert category_empty_product.middle_price() == 0
+
 
 def test_my_exception(capsys, for_category):
     assert len(for_category.products_list) == 2
@@ -30,5 +32,5 @@ def test_my_exception(capsys, for_category):
     product_add = Product("Сыр 3", "Сыр с плесенью", 150.50, 5)
     for_category.add_product(product_add)
     message = capsys.readouterr()
-    assert message.out.strip().split('\n')[-2] == "Товар добавлен успешно"
-    assert message.out.strip().split('\n')[-1] == "Обработка добавления товара завершена"
+    assert message.out.strip().split("\n")[-2] == "Товар добавлен успешно"
+    assert message.out.strip().split("\n")[-1] == "Обработка добавления товара завершена"

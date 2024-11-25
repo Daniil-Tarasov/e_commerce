@@ -58,7 +58,4 @@ def second_lawn_grass():
 
 @pytest.fixture
 def category_empty_product():
-    return Category(
-        name="Молочные продукты",
-        description="Сыр с плесенью"
-    )
+    return Category(name="Молочные продукты", description="Сыр с плесенью")
