@@ -16,3 +16,7 @@ def test_products_property(for_category):
 
 def test_str_category(for_category):
     assert str(for_category) == "Молочные продукты, количество продуктов: 15 шт."
+
+def test_middle_price(for_category, category_empty_product):
+    assert for_category.middle_price() == 125.745
+    assert category_empty_product.middle_price() == 0
