@@ -54,3 +54,8 @@ def first_lawn_grass():
 @pytest.fixture
 def second_lawn_grass():
     return LawnGrass("Газонная трава 2", "Выносливая", 450.0, 15, "США", "5 дней", "Темно-зеленый")
+
+
+@pytest.fixture
+def category_empty_product():
+    return Category(name="Молочные продукты", description="Сыр с плесенью")
